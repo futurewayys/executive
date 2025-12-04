@@ -58,7 +58,7 @@ if getgenv().Flags then
 end
 
 repeat
-	Luna = loadstring(game:HttpGet("https://github.com/futurewayys/Executive/raw/dev/Luna.lua"))
+	Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/futurewayys/executive/refs/heads/main/Luna.lua"))
 	
 	if Luna then
 		Luna = Luna()
