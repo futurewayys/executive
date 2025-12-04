@@ -266,14 +266,14 @@ ReReplicateTextEffect.OnClientEvent:Connect(function(data)
     task.delay(Flags.CatchDelay.CurrentValue, function()
       for i = 1, 5 do
         pcall(ReFishingCompleted.FireServer, ReFishingCompleted)
-        task.wait(0.1)
+        task.wait(0.001)
       end
     end)
   end
 end)
 
 ReFishCaught.OnClientEvent:Connect(function()
-  task.delay(0.2, function()
+  task.delay(0.001, function()
     pcall(RfCancelFishingInputs.InvokeServer, RfCancelFishingInputs)
     ReEquipToolFromHotbar:FireServer(1)
   end)
