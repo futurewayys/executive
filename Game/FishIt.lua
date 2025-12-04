@@ -12,7 +12,7 @@ v0.4.1a
 ]]
 
 do
-  local Core = loadstring(game:HttpGet("https://github.com/futurewayys/Executive/raw/dev/Core.lua"))
+  local Core = loadstring(game:HttpGet("https://raw.githubusercontent.com/futurewayys/executive/refs/heads/main/Core.lua"))
   if not Core then return warn("Failed to load the Executive Core") end
   Core()
 end
